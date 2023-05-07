@@ -37,7 +37,41 @@ const Nav = ({ pos, underline }) => {
   return (
     <div className='Navbar' style={{ position: `${pos}`, top: `0` }}>
       <div className='Content' style={{ borderBottom: `${underline}` }}>
-        <p>fdsfdscxvcxdsf</p>
+        <div className='Left'>
+          <h2>ARacknid Design</h2>
+          <div className='NavItems'>
+            <div className='Drop'>
+              <div className='DropOuter'>
+                <p>How We Help</p>
+                <div className='DropInner'>
+                  <p>Website Design</p>
+                  <p>Website Implementation</p>
+                  <p>Website Hosting</p>
+                  <p>SEO & Analytics</p>
+                  <p>Animation</p>
+                  <p>Logo Design</p>
+                  <p>Busines Card Design</p>
+                </div>
+              </div>
+            </div>
+            <div className='Drop'>
+              <div className='DropOuter'>
+                <p>Why ARacknid</p>
+                <div className='DropInner'>
+                  <p>About</p>
+                  <p>Community</p>
+                  <p>Planning</p>
+                </div>
+              </div>
+            </div>
+            <p>Testimonials</p>
+          </div>
+        </div>
+        <div className='Right'>
+          <p>Connor@ARacknid.ca</p>
+          <p>(613)-869-2343</p>
+          <button>Get Started</button>
+        </div>
       </div>
     </div>
   );
