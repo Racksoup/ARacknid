@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 const Navbar = () => {
   const [showNav, toggleShowNav] = useState(false);
 
@@ -42,7 +45,10 @@ const Nav = ({ pos, underline }) => {
           <div className='NavItems'>
             <div className='Drop'>
               <div className='DropOuter'>
-                <p>How We Help</p>
+                <div className='DropTitle'>
+                  <p>How We Help</p>
+                  <FontAwesomeIcon icon={faChevronDown} className='Icon' />
+                </div>
                 <div className='DropInner'>
                   <p>Website Design</p>
                   <p>Website Implementation</p>
@@ -56,7 +62,10 @@ const Nav = ({ pos, underline }) => {
             </div>
             <div className='Drop'>
               <div className='DropOuter'>
-                <p>Why ARacknid</p>
+                <div className='DropTitle'>
+                  <p>Why ARacknid</p>
+                  <FontAwesomeIcon icon={faChevronDown} className='Icon' />
+                </div>
                 <div className='DropInner'>
                   <p>About</p>
                   <p>Community</p>
