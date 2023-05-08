@@ -16,6 +16,7 @@ const Landing = () => {
       <Goals />
       <Examples />
       <LandingTestimonials />
+      <div style={{ marginTop: '18rem' }} />
       <LandingContact />
     </div>
   );
