@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar.jsx';
 import Goals from './Goals/Goals.jsx';
 import Cover from './Cover/Cover.jsx';
 import Examples from './Examples/Examples.jsx';
+import LandingTestimonials from './LandingTestimonials/LandingTestimonials.jsx';
 
 const Landing = () => {
   return (
@@ -15,6 +16,7 @@ const Landing = () => {
       <Cover />
       <Goals />
       <Examples />
+      <LandingTestimonials />
     </div>
   );
 };
