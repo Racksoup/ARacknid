@@ -9,8 +9,8 @@ export default function ThreeScene() {
 
   const gltfLoader = new GLTFLoader();
   gltfLoader.load(Donut, (gltf) => {
-    gltf.scene.scale.set(30, 30, 30);
-    gltf.scene.position.y = -2;
+    gltf.scene.scale.set(26, 26, 26);
+    gltf.scene.position.y = -2.25;
     const root = gltf.scene;
     group.current.add(root);
   });

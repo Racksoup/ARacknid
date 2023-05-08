@@ -34,6 +34,7 @@
           font-family: 'Futura';
           font-size: 1.9rem;
           line-height: 1.9rem;
+          cursor: pointer;
         }
 
         .NavItems {
@@ -42,6 +43,10 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          p {
+            cursor: pointer;
+          }
 
           .Drop {
             position: relative;
@@ -63,9 +68,9 @@
                 align-items: end;
 
                 .Icon {
-                  margin-left: 0.3rem;
+                  margin-left: 0.4rem;
                   margin-bottom: 0.2rem;
-                  width: 0.8rem;
+                  width: 0.6rem;
                   height: 0.8rem;
                 }
               }
