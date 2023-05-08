@@ -84,9 +84,15 @@ const Nav = ({ pos, underline }) => {
                   <FontAwesomeIcon icon={faChevronDown} className='Icon' />
                 </div>
                 <div className='DropInner'>
-                  <p>About</p>
-                  <p>Community</p>
-                  <p>Planning</p>
+                  <Link to='/about'>
+                    <p>About</p>
+                  </Link>
+                  <Link to='/community'>
+                    <p>Community</p>
+                  </Link>
+                  <Link to='/planning'>
+                    <p>Planning</p>
+                  </Link>
                 </div>
               </div>
             </div>
