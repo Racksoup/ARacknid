@@ -3,6 +3,7 @@ import './Navbar.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showNav, toggleShowNav] = useState(false);
@@ -41,7 +42,9 @@ const Nav = ({ pos, underline }) => {
     <div className='Navbar' style={{ position: `${pos}`, top: `0` }}>
       <div className='Content' style={{ borderBottom: `${underline}` }}>
         <div className='Left'>
-          <h2>ARacknid Design</h2>
+          <Link to='/'>
+            <h2>ARacknid Design</h2>
+          </Link>
           <div className='NavItems'>
             <div className='Drop'>
               <div className='DropOuter'>
@@ -50,13 +53,27 @@ const Nav = ({ pos, underline }) => {
                   <FontAwesomeIcon icon={faChevronDown} className='Icon' />
                 </div>
                 <div className='DropInner'>
-                  <p>Website Design</p>
-                  <p>Website Implementation</p>
-                  <p>Website Hosting</p>
-                  <p>SEO & Analytics</p>
-                  <p>Animation</p>
-                  <p>Logo Design</p>
-                  <p>Busines Card Design</p>
+                  <Link to='/website-design'>
+                    <p>Website Design</p>
+                  </Link>
+                  <Link to='/website-implementation'>
+                    <p>Website Implementation</p>
+                  </Link>
+                  <Link to='/website-hosting'>
+                    <p>Website Hosting</p>
+                  </Link>
+                  <Link to='/analytics'>
+                    <p>SEO & Analytics</p>
+                  </Link>
+                  <Link to='/animation'>
+                    <p>Animation</p>
+                  </Link>
+                  <Link to='/logo-design'>
+                    <p>Logo Design</p>
+                  </Link>
+                  <Link to='/business-cards'>
+                    <p>Busines Card Design</p>
+                  </Link>
                 </div>
               </div>
             </div>

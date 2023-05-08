@@ -1,0 +1,89 @@
+@import '../App.scss';
+
+.ServicePage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+
+  .Content {
+    width: 100%;
+    max-width: 1680px;
+    height: 48.6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 44.2%;
+      height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+
+    .Info {
+      width: 50%;
+      height: 100%;
+      padding: 4.1rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .IconBox {
+        width: 4.8rem;
+        height: 4.8rem;
+        background-color: $DarkOrange;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Icon {
+          width: 3.1rem;
+          height: 3.1rem;
+          path {
+            color: black;
+          }
+        }
+      }
+
+      label {
+        padding: 0.7rem 1.8rem;
+        background-color: rgba(43, 62, 65, 1);
+        border-radius: 10rem;
+        color: rgba(162, 199, 205, 1);
+        font-size: 0.9rem;
+        line-height: 0.9rem;
+        font-family: 'Futura-Heavy';
+        flex-grow: 0;
+      }
+
+      h2 {
+        font-size: 3rem;
+        line-height: 3.3rem;
+      }
+
+      h4 {
+        margin-top: -0.7rem;
+        margin-bottom: -0.7rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        font-weight: 100;
+        font-family: 'Futura-Heavy';
+      }
+
+      p {
+        margin-top: 1.3rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
+        font-family: 'Futura-LightBT';
+        font-weight: 100;
+        color: rgb(199, 198, 198);
+      }
+    }
+  }
+}
