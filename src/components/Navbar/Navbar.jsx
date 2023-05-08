@@ -28,7 +28,7 @@ const Navbar = () => {
     <div className='NavBox'>
       {showNav && <div className='NavPlaceholder'></div>}
       {showNav ? (
-        <Nav pos='fixed' underline='rgba(255,255,255,1) solid 1px' />
+        <Nav pos='fixed' underline='rgba(255,255,255,.5) solid 1px' />
       ) : (
         <Nav pos='relative' underline='none' />
       )}
