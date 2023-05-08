@@ -1,9 +1,5 @@
 $BGColor: rgba(21, 21, 21, 1);
-$darkBlue: rgb(0, 20, 31);
-$lightBlue: rgb(185, 225, 248);
-$lightOrange: rgb(255, 244, 219);
-$midOrange: rgb(255, 214, 126);
-$darkOrange: rgb(185, 126, 0);
+$DarkOrange: rgba(241, 158, 34, 1);
 
 html {
   width: 100%;
@@ -18,7 +14,7 @@ body {
 }
 
 * {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica-Bold';
   cursor: default;
   margin: 0;
   padding: 0;
@@ -53,6 +49,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+p {
+  font-family: 'Futura-LightBT';
 }
 
 .App {
