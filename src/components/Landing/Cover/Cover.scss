@@ -23,6 +23,11 @@
       font-weight: 800;
       font-family: 'Helvetica-Bold';
       text-align: center;
+
+      @media (max-width: 600px) {
+        font-size: 3.1rem;
+        line-height: 3.1rem;
+      }
     }
     h3 {
       font-family: 'Futura-LightBT';

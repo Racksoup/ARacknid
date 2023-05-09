@@ -29,23 +29,24 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
     { image: Desk1, title: 'Third Business Card' },
   ];
 
-  // const [dimensions, setDimensions] = useState({
-  //   height: window.innerHeight,
-  //   width: window.innerWidth,
-  // });
-  // useEffect(() => {
-  //   function handleResize() {
-  //     setDimensions({
-  //       height: window.innerHeight,
-  //       width: window.innerWidth,
-  //     });
-  //   }
-  //   window.addEventListener('resize', handleResize);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  const setWindowDimensions = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+  };
 
-  //   return (_) => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // });
+  useEffect(() => {
+    window.addEventListener('resize', setWindowDimensions);
+    return () => {
+      window.removeEventListener('resize', setWindowDimensions);
+    };
+  }, []);
+
+  let smallResize = 1;
+  if (windowWidth < 700) {
+    smallResize = 2;
+  }
 
   return (
     <div className='ServicePage'>
@@ -83,8 +84,8 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
               src={logoDesign[0].image}
               alt='Example'
               style={{
-                width: `${parseInt(420 * (screen.width / 1920))}px`,
-                height: `${parseInt(256 * (screen.width / 1920))}px`,
+                width: `${parseInt(420 * (smallResize * (windowWidth / 1920)))}px`,
+                height: `${parseInt(256 * (smallResize * (windowWidth / 1920)))}px`,
               }}
             />
 
@@ -92,16 +93,16 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
               src={logoDesign[1].image}
               alt='Example'
               style={{
-                width: `${parseInt(420 * (screen.width / 1920))}px`,
-                height: `${parseInt(256 * (screen.width / 1920))}px`,
+                width: `${parseInt(420 * (smallResize * (windowWidth / 1920)))}px`,
+                height: `${parseInt(256 * (smallResize * (windowWidth / 1920)))}px`,
               }}
             />
             <img
               src={logoDesign[2].image}
               alt='Example'
               style={{
-                width: `${parseInt(420 * (screen.width / 1920))}px`,
-                height: `${parseInt(256 * (screen.width / 1920))}px`,
+                width: `${parseInt(420 * (smallResize * (windowWidth / 1920)))}px`,
+                height: `${parseInt(256 * (smallResize * (windowWidth / 1920)))}px`,
               }}
             />
           </div>
@@ -115,24 +116,24 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
               src={businessCards[0].image}
               alt='Example'
               style={{
-                width: `${parseInt(420 * (screen.width / 1920))}px`,
-                height: `${parseInt(256 * (screen.width / 1920))}px`,
+                width: `${parseInt(420 * (smallResize * (windowWidth / 1920)))}px`,
+                height: `${parseInt(256 * (smallResize * (windowWidth / 1920)))}px`,
               }}
             />
             <img
               src={businessCards[1].image}
               alt='Example'
               style={{
-                width: `${parseInt(420 * (screen.width / 1920))}px`,
-                height: `${parseInt(256 * (screen.width / 1920))}px`,
+                width: `${parseInt(420 * (smallResize * (windowWidth / 1920)))}px`,
+                height: `${parseInt(256 * (smallResize * (windowWidth / 1920)))}px`,
               }}
             />
             <img
               src={businessCards[2].image}
               alt='Example'
               style={{
-                width: `${parseInt(420 * (screen.width / 1920))}px`,
-                height: `${parseInt(256 * (screen.width / 1920))}px`,
+                width: `${parseInt(420 * (smallResize * (windowWidth / 1920)))}px`,
+                height: `${parseInt(256 * (smallResize * (windowWidth / 1920)))}px`,
               }}
             />
           </div>

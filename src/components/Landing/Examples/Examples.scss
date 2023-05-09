@@ -22,6 +22,7 @@
       font-size: 2.9rem;
       margin-bottom: 4rem;
       font-family: 'Helvetica-Bold';
+      text-align: center;
     }
 
     .Grid {
@@ -32,6 +33,10 @@
       align-items: center;
       justify-items: center;
 
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
       .Item {
         width: 100%;
         height: 40rem;
@@ -41,6 +46,9 @@
 
         @media (max-width: 1200px) {
           height: 25rem;
+        }
+        @media (max-width: 600px) {
+          height: 15rem;
         }
 
         img {

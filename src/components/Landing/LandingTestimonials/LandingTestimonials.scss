@@ -80,6 +80,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+
+    @media (max-width: 600px) {
+      padding: 1.4rem 0.5rem 0 0.5rem;
+    }
   }
 
   .NameBox {
@@ -141,6 +145,9 @@
 
     @media (max-width: 1600px) {
       padding: 0 2rem;
+    }
+    @media (max-width: 600px) {
+      padding: 0 0.5rem;
     }
 
     .Stat-Item {
