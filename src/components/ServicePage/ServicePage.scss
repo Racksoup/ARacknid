@@ -86,4 +86,17 @@
       }
     }
   }
+
+  .LargeTitle {
+    margin-bottom: 1.8rem;
+    width: 100%;
+    height: 4rem;
+    background-color: $LightOrange;
+    border-radius: 10rem;
+    font-size: 3rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

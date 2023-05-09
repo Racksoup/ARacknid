@@ -1,29 +1,27 @@
 import React from 'react';
 import './Examples.scss';
 
-import Website1 from '../../../assets/images/Website1.jpg';
-
-const Examples = () => {
+const Examples = ({ landing, info }) => {
   return (
     <div className='Examples'>
-      <div className='Content'>
-        <h3>Businesses I've Helped</h3>
+      <div className='Examples-Content'>
+        {landing && <h3>Businesses I've Helped</h3>}
         <div className='Grid'>
           <div className='Item'>
-            <img src={Website1} alt='Website' />
-            <h5>BIG CAMERA</h5>
+            <img src={info[0].image} alt='Website' />
+            <h5>{info[0].title}</h5>
           </div>
           <div className='Item'>
-            <img src={Website1} alt='Website' />
-            <h5>BIG CAMERA</h5>
+            <img src={info[1].image} alt='Website' />
+            <h5>{info[1].title}</h5>
           </div>
           <div className='Item'>
-            <img src={Website1} alt='Website' />
-            <h5>BIG CAMERA</h5>
+            <img src={info[2].image} alt='Website' />
+            <h5>{info[2].title}</h5>
           </div>
           <div className='Item'>
-            <img src={Website1} alt='Website' />
-            <h5>BIG CAMERA</h5>
+            <img src={info[3].image} alt='Website' />
+            <h5>{info[3].title}</h5>
           </div>
         </div>
       </div>
