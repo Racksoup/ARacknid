@@ -72,8 +72,8 @@ const LandingContact = () => {
         <div className='Left'>
           <h4>A business you can grow starts here</h4>
           <p>
-            A bright future starts here. Start growing your business today. I’ve helped over a
-            billion clients find the perfect web design for them. Start now!
+            A bright future starts here. Start growing your business today. I help clients find the
+            perfect web design for them. Start now!
           </p>
           <p className='Number'>(613) 869-2343</p>
         </div>

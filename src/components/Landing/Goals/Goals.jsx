@@ -31,14 +31,14 @@ const Goals = () => {
           layout={window.innerWidth > 1020 ? 2 : 1}
           icon={faChildReaching}
           title='Grow Customer Relationships'
-          text='Every website is different. Every business needs a different website. I help you figure out what features your website needs to compete in your industry'
+          text={`Client relationships is about building and maintaining strong connections with your customers over time. It involves understanding your customers' needs, wants, and pain points, and finding ways to provide value and exceed their expectations`}
           image={Customer}
         />
         <WideInfoSection
           layout={1}
           icon={faSearch}
           title='Analytics and Hosting'
-          text='An inviting style is what a business needs to capture an audiences attention. I can help you develop an exciting logo, business card template, and website design.'
+          text={`Analytics and hosting are essential components of a successful website. Analytics helps you track user behavior, measure the effectiveness of your marketing efforts, and make data-driven decisions, while hosting ensures that your website is available and accessible to users around the clock.`}
           image={Analytics}
         />
       </div>
