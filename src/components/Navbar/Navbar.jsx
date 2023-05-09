@@ -105,7 +105,9 @@ const Nav = ({ pos, underline }) => {
             <p>(613)-869-2343</p>
           </div>
           <Link to='/planning'>
-            <button>Get Started</button>
+            <button>
+              <p>Get Started</p>
+            </button>
           </Link>
         </div>
       </div>
