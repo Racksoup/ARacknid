@@ -13,7 +13,7 @@ const LandingTestimonials = () => {
           image={Website1}
           name='John Doe'
           business='Drew Law'
-          text='They did a great job! I couldn’t ask for a more professional developer. Really took the time to make sure I understand what I need.'
+          text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
         />
         <div className='Center'>
           <h4>Helping business owners reach their customers</h4>
@@ -21,14 +21,14 @@ const LandingTestimonials = () => {
             image={Website1}
             name='John Doe'
             business='Drew Law'
-            text='They did a great job! I couldn’t ask for a more professional developer. Really took the time to make sure I understand what I need.'
+            text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
           />
         </div>
         <TestimonialWidget
           image={Website1}
           name='John Doe'
           business='Drew Law'
-          text='They did a great job! I couldn’t ask for a more professional developer. Really took the time to make sure I understand what I need.'
+          text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
         />
       </div>
     </div>

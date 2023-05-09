@@ -100,8 +100,10 @@ const Nav = ({ pos, underline }) => {
           </div>
         </div>
         <div className='Right'>
-          <p>Connor@ARacknid.ca</p>
-          <p>(613)-869-2343</p>
+          <div className='ContactInfo'>
+            <p>Connor@ARacknid.ca</p>
+            <p>(613)-869-2343</p>
+          </div>
           <Link to='/planning'>
             <button>Get Started</button>
           </Link>

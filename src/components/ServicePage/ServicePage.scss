@@ -17,6 +17,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: $BreakLarge) {
+      width: 90%;
+    }
+
     img {
       width: 44.2%;
       height: 100%;
@@ -32,6 +36,10 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+
+      @media (max-width: 1515px) {
+        padding: 4.3rem 0;
+      }
 
       .IconBox {
         width: 4.8rem;
@@ -65,6 +73,11 @@
       h2 {
         font-size: 3rem;
         line-height: 3.3rem;
+
+        @media (max-width: 1515px) {
+          font-size: 2.2rem;
+          line-height: 2.5rem;
+        }
       }
 
       h4 {
@@ -83,6 +96,8 @@
         font-family: 'Futura-LightBT';
         font-weight: 100;
         color: rgb(199, 198, 198);
+        max-height: 15.25rem;
+        overflow: hidden;
       }
     }
   }
@@ -107,7 +122,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.06);
+
+    @media (max-width: 1500px) {
+      height: 21rem;
+    }
 
     h3 {
       font-size: 3rem;
@@ -120,8 +139,6 @@
       justify-content: space-evenly;
 
       img {
-        width: 28rem;
-        height: 16rem;
         object-fit: cover;
         // cursor: pointer;
       }

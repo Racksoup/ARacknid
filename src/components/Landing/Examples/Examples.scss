@@ -14,6 +14,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: $BreakLarge) {
+      width: 90%;
+    }
+
     h3 {
       font-size: 2.9rem;
       margin-bottom: 4rem;
@@ -30,13 +34,18 @@
 
       .Item {
         width: 100%;
+        height: 40rem;
         position: relative;
         border-radius: 2rem;
         cursor: pointer;
 
+        @media (max-width: 1200px) {
+          height: 25rem;
+        }
+
         img {
-          height: 40rem;
           width: 100%;
+          height: 100%;
           object-fit: cover;
           border-radius: 1rem;
           cursor: pointer;

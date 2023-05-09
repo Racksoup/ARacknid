@@ -19,6 +19,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: $BreakLarge) {
+      width: 90%;
+    }
+
     .Left {
       display: flex;
       flex-direction: column;

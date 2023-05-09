@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ServicePage.scss';
 import Examples from '../Landing/Examples/Examples.jsx';
 import Desk1 from '../../assets/images/Desk1.jpg';
@@ -28,6 +28,24 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
     { image: Desk1, title: 'Second Business Card' },
     { image: Desk1, title: 'Third Business Card' },
   ];
+
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+    window.addEventListener('resize', handleResize);
+
+    return (_) => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
 
   return (
     <div className='ServicePage'>
@@ -61,9 +79,31 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
         <div className='SmallExamples'>
           <h3>Examples</h3>
           <div className='SmallExamples-Content'>
-            <img src={logoDesign[0].image} alt='Example' />
-            <img src={logoDesign[1].image} alt='Example' />
-            <img src={logoDesign[2].image} alt='Example' />
+            <img
+              src={logoDesign[0].image}
+              alt='Example'
+              style={{
+                width: `${parseInt(420 * (screen.width / 1920))}px`,
+                height: `${parseInt(256 * (screen.width / 1920))}px`,
+              }}
+            />
+
+            <img
+              src={logoDesign[1].image}
+              alt='Example'
+              style={{
+                width: `${parseInt(420 * (screen.width / 1920))}px`,
+                height: `${parseInt(256 * (screen.width / 1920))}px`,
+              }}
+            />
+            <img
+              src={logoDesign[2].image}
+              alt='Example'
+              style={{
+                width: `${parseInt(420 * (screen.width / 1920))}px`,
+                height: `${parseInt(256 * (screen.width / 1920))}px`,
+              }}
+            />
           </div>
         </div>
       )}
@@ -71,9 +111,30 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
         <div className='SmallExamples'>
           <h3>Examples</h3>
           <div className='SmallExamples-Content'>
-            <img src={businessCards[0].image} alt='Example' />
-            <img src={businessCards[1].image} alt='Example' />
-            <img src={businessCards[2].image} alt='Example' />
+            <img
+              src={businessCards[0].image}
+              alt='Example'
+              style={{
+                width: `${parseInt(420 * (screen.width / 1920))}px`,
+                height: `${parseInt(256 * (screen.width / 1920))}px`,
+              }}
+            />
+            <img
+              src={businessCards[1].image}
+              alt='Example'
+              style={{
+                width: `${parseInt(420 * (screen.width / 1920))}px`,
+                height: `${parseInt(256 * (screen.width / 1920))}px`,
+              }}
+            />
+            <img
+              src={businessCards[2].image}
+              alt='Example'
+              style={{
+                width: `${parseInt(420 * (screen.width / 1920))}px`,
+                height: `${parseInt(256 * (screen.width / 1920))}px`,
+              }}
+            />
           </div>
         </div>
       )}
