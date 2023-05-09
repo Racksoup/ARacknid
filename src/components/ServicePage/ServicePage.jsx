@@ -31,7 +31,7 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
 
   return (
     <div className='ServicePage'>
-      <div className='Content'>
+      <div className='ServicePage-Content'>
         {layout == 1 && <img src={image} alt='Service' />}
         <div className='Info'>
           <div className='IconBox'>
@@ -55,6 +55,26 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
         <div>
           <h3 className='LargeTitle'>Animations I've made</h3>
           <Examples info={animations} landing={false} />
+        </div>
+      )}
+      {examples == 'logoDesign' && (
+        <div className='SmallExamples'>
+          <h3>Examples</h3>
+          <div className='SmallExamples-Content'>
+            <img src={logoDesign[0].image} alt='Example' />
+            <img src={logoDesign[1].image} alt='Example' />
+            <img src={logoDesign[2].image} alt='Example' />
+          </div>
+        </div>
+      )}
+      {examples == 'businessCards' && (
+        <div className='SmallExamples'>
+          <h3>Examples</h3>
+          <div className='SmallExamples-Content'>
+            <img src={businessCards[0].image} alt='Example' />
+            <img src={businessCards[1].image} alt='Example' />
+            <img src={businessCards[2].image} alt='Example' />
+          </div>
         </div>
       )}
       {examples != 'none' && <div style={{ marginBottom: '4rem' }} />}

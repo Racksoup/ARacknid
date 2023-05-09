@@ -96,13 +96,15 @@ const Nav = ({ pos, underline }) => {
                 </div>
               </div>
             </div>
-            <p>Testimonials</p>
+            {/* <p>Testimonials</p> */}
           </div>
         </div>
         <div className='Right'>
           <p>Connor@ARacknid.ca</p>
           <p>(613)-869-2343</p>
-          <button>Get Started</button>
+          <Link to='/planning'>
+            <button>Get Started</button>
+          </Link>
         </div>
       </div>
     </div>

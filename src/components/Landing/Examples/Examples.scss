@@ -32,12 +32,14 @@
         width: 100%;
         position: relative;
         border-radius: 2rem;
+        cursor: pointer;
 
         img {
           height: 40rem;
           width: 100%;
           object-fit: cover;
           border-radius: 1rem;
+          cursor: pointer;
         }
 
         h5 {
@@ -47,6 +49,7 @@
           left: 1.2rem;
           z-index: 3;
           font-size: 2.2rem;
+          cursor: pointer;
         }
       }
     }
