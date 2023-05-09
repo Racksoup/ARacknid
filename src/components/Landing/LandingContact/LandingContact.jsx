@@ -68,7 +68,7 @@ const LandingContact = () => {
   return (
     <div className='LandingContact'>
       {showModal && <Modal text={modalText} />}
-      <div className='Content'>
+      <div className='LandingContact-Content'>
         <div className='Left'>
           <h4>A business you can grow starts here</h4>
           <p>

@@ -8,15 +8,23 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 const LandingTestimonials = () => {
   return (
     <div className='LandingTestimonials'>
-      <div className='Content'>
-        <TestimonialWidget
-          image={Website1}
-          name='John Doe'
-          business='Drew Law'
-          text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
-        />
-        <div className='Center'>
-          <h4>Helping business owners reach their customers</h4>
+      {window.innerWidth > 1390 ? (
+        <div className='LandingTestimonials-Content'>
+          <TestimonialWidget
+            image={Website1}
+            name='John Doe'
+            business='Drew Law'
+            text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
+          />
+          <div className='Center'>
+            <h4>Helping business owners reach their customers</h4>
+            <TestimonialWidget
+              image={Website1}
+              name='John Doe'
+              business='Drew Law'
+              text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
+            />
+          </div>
           <TestimonialWidget
             image={Website1}
             name='John Doe'
@@ -24,13 +32,29 @@ const LandingTestimonials = () => {
             text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
           />
         </div>
-        <TestimonialWidget
-          image={Website1}
-          name='John Doe'
-          business='Drew Law'
-          text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
-        />
-      </div>
+      ) : (
+        <div className='LandingTestimonials-Content2'>
+          <h4>Helping business owners reach their customers</h4>
+          <TestimonialWidget
+            image={Website1}
+            name='John Doe'
+            business='Drew Law'
+            text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
+          />
+          <TestimonialWidget
+            image={Website1}
+            name='John Doe'
+            business='Drew Law'
+            text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
+          />
+          <TestimonialWidget
+            image={Website1}
+            name='John Doe'
+            business='Drew Law'
+            text='He did a great job! I couldn’t ask for a more professional developer. Connor really took the time to make sure I understand what I need.'
+          />
+        </div>
+      )}
     </div>
   );
 };

@@ -7,13 +7,14 @@
   align-items: center;
   z-index: 1;
 
-  .Content {
+  &-Content {
     margin-top: 20rem;
     width: 100%;
     max-width: 1680px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5rem;
+    justify-items: center;
 
     @media (max-width: $BreakLarge) {
       width: 90%;
@@ -34,6 +35,26 @@
         font-size: 3rem;
         line-height: 3.8rem;
       }
+    }
+  }
+
+  &-Content2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    h4 {
+      margin-left: -7.5%;
+      width: 115%;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    .TestimonialWidget {
+      margin: 2rem 0;
     }
   }
 }

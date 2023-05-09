@@ -14,7 +14,7 @@ const Goals = () => {
       <div className='Content'>
         <h3>Goals I can help you achieve</h3>
         <WideInfoSection
-          layout={2}
+          layout={window.innerWidth > 1020 ? 2 : 1}
           icon={faLightbulb}
           title='Understand vital website features'
           text='Every website is different. Every business needs a different website. I help you figure out features your website will need to compete in your industry'
@@ -28,7 +28,7 @@ const Goals = () => {
           image={StreetArt}
         />
         <WideInfoSection
-          layout={2}
+          layout={window.innerWidth > 1020 ? 2 : 1}
           icon={faChildReaching}
           title='Grow Customer Relationships'
           text='Every website is different. Every business needs a different website. I help you figure out what features your website needs to compete in your industry'

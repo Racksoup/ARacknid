@@ -5,4 +5,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .ExamplesSpacer {
+    margin-top: 11rem;
+
+    @media (max-width: 1300px) {
+      margin-top: 8rem;
+    }
+  }
+  .ContactSpacer {
+    margin-top: 18rem;
+
+    @media (max-width: 1300px) {
+      margin-top: 8rem;
+    }
+  }
 }

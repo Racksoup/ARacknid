@@ -7,7 +7,7 @@
   align-items: center;
   z-index: 1;
 
-  .Content {
+  &-Content {
     margin-bottom: 4rem;
     width: 100%;
     max-width: 1680px;
@@ -22,6 +22,13 @@
     @media (max-width: $BreakLarge) {
       width: 90%;
     }
+    @media (max-width: 1439px) {
+      flex-direction: column;
+      height: auto;
+    }
+    @media (max-width: 735px) {
+      padding: 2rem;
+    }
 
     .Left {
       display: flex;
@@ -30,9 +37,18 @@
       height: 100%;
       width: 45%;
 
+      @media (max-width: 1439px) {
+        width: 100%;
+      }
+
       h4 {
         font-size: 5.8rem;
         line-height: 6.3rem;
+
+        @media (max-width: 880px) {
+          font-size: 3.8rem;
+          line-height: 4.3rem;
+        }
       }
 
       p {
@@ -41,14 +57,23 @@
         font-weight: 300;
         font-family: 'Futura-Book';
         color: rgba(232, 232, 232, 1);
+
+        @media (max-width: 1439px) {
+          margin-top: 2.4rem;
+        }
       }
 
       .Number {
         font-size: 2.8rem;
+        line-height: 3.2rem;
         margin-bottom: 2rem;
         font-family: 'Helvetica';
         font-weight: 600;
         color: white;
+        @media (max-width: 880px) {
+          font-size: 2rem;
+          line-height: 2.2rem;
+        }
       }
     }
 
@@ -61,6 +86,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      @media (max-width: 1439px) {
+        width: 100%;
+      }
 
       * {
         color: black;
@@ -101,6 +130,10 @@
         display: flex;
         flex-direction: column;
 
+        @media (max-width: 1439px) {
+          margin-top: 1.8rem;
+        }
+
         textarea {
           width: 100%;
           height: 25rem;
@@ -129,6 +162,10 @@
 
         &:hover {
           border: solid 2px Black;
+        }
+
+        @media (max-width: 1439px) {
+          margin-top: 1.8rem;
         }
       }
     }

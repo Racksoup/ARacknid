@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Landing.scss';
 import Desk1 from '../../assets/images/Desk1.jpg';
 
@@ -17,15 +17,33 @@ const Landing = () => {
     { image: Desk1, title: 'Fourth Website' },
   ];
 
+  // const [dimensions, setDimensions] = useState({
+  //   height: window.innerHeight,
+  //   width: window.innerWidth,
+  // });
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setDimensions({
+  //       height: window.innerHeight,
+  //       width: window.innerWidth,
+  //     });
+  //   }
+  //   window.addEventListener('resize', handleResize);
+
+  //   return (_) => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // });
+
   return (
     <div className='Landing'>
       <ThreeScene />
       <Cover />
       <Goals />
-      <div style={{ marginTop: '11rem' }} />
+      <div className='ExamplesSpacer' />
       <Examples landing={true} info={websiteDesign} />
       <LandingTestimonials />
-      <div style={{ marginTop: '18rem' }} />
+      <div className='ContactSpacer' />
       <LandingContact />
     </div>
   );

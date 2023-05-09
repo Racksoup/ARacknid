@@ -29,23 +29,23 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
     { image: Desk1, title: 'Third Business Card' },
   ];
 
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-  useEffect(() => {
-    function handleResize() {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }
-    window.addEventListener('resize', handleResize);
+  // const [dimensions, setDimensions] = useState({
+  //   height: window.innerHeight,
+  //   width: window.innerWidth,
+  // });
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setDimensions({
+  //       height: window.innerHeight,
+  //       width: window.innerWidth,
+  //     });
+  //   }
+  //   window.addEventListener('resize', handleResize);
 
-    return (_) => {
-      window.removeEventListener('resize', handleResize);
-    };
-  });
+  //   return (_) => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // });
 
   return (
     <div className='ServicePage'>
@@ -62,7 +62,7 @@ const ServicePage = ({ layout, icon, label, title, subtitle, text, image, exampl
         </div>
         {layout == 2 && <img src={image} alt='Service' />}
       </div>
-      {examples != 'none' && <div style={{ marginTop: '8rem' }} />}
+      {examples != 'none' && <div className='Examples-Spacer' />}
       {examples == 'websiteDesign' && (
         <div>
           <h3 className='LargeTitle'>Businesses I've helped</h3>
