@@ -12,33 +12,33 @@ const Goals = () => {
   return (
     <div className='Goals'>
       <div className='Content'>
-        <h3>Goals we can help you achieve</h3>
+        <h3>Goals I can help you achieve</h3>
         <WideInfoSection
           layout={2}
           icon={faLightbulb}
           title='Understand vital website features'
-          text='Every website is different. Every business needs a different website. We help you figure out features your website will need to compete in your industry'
+          text='Every website is different. Every business needs a different website. I help you figure out features your website will need to compete in your industry'
           image={Website2}
         />
         <WideInfoSection
           layout={1}
           icon={faTags}
           title='Build your Brand'
-          text='An inviting style is what a business needs to capture an audiences attention. We can help you develop an exciting logo, business card template, and website design.'
+          text='An inviting style is what a business needs to capture an audiences attention. I can help you develop an exciting logo, business card template, and website design.'
           image={StreetArt}
         />
         <WideInfoSection
           layout={2}
           icon={faChildReaching}
           title='Grow Customer Relationships'
-          text='Every website is different. Every business needs a different website. We help you figure out what features your website needs to compete in your industry'
+          text='Every website is different. Every business needs a different website. I help you figure out what features your website needs to compete in your industry'
           image={Customer}
         />
         <WideInfoSection
           layout={1}
           icon={faSearch}
           title='Analytics and Hosting'
-          text='An inviting style is what a business needs to capture an audiences attention. We can help you develop an exciting logo, business card template, and website design.'
+          text='An inviting style is what a business needs to capture an audiences attention. I can help you develop an exciting logo, business card template, and website design.'
           image={Analytics}
         />
       </div>

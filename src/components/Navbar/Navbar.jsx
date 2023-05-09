@@ -49,7 +49,7 @@ const Nav = ({ pos, underline }) => {
             <div className='Drop'>
               <div className='DropOuter'>
                 <div className='DropTitle'>
-                  <p>How We Help</p>
+                  <p>How I Help</p>
                   <FontAwesomeIcon icon={faChevronDown} className='Icon' />
                 </div>
                 <div className='DropInner'>
