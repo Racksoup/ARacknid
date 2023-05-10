@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import Donut from '../assets/models/Donut8.glb';
+// import Donut from '../assets/models/Donut8.glb';
+import Donut from '../assets/models/Spider1.glb';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -14,12 +15,14 @@ export default function ThreeScene() {
   useEffect(() => {
     const gltfLoader = new GLTFLoader();
     gltfLoader.load(Donut, (gltf) => {
-      gltf.scene.scale.set(26, 26, 26);
-      gltf.scene.position.y = -2.25;
+      gltf.scene.scale.set(7, 7, 7);
+      gltf.scene.rotateY(3.14);
+      gltf.scene.rotateX(-0.45);
+      gltf.scene.position.y = -2;
 
-      mixer.current = new THREE.AnimationMixer(gltf.scene);
-      const animationAction = mixer.current.clipAction(gltf.animations[0]);
-      animationAction.play();
+      // mixer.current = new THREE.AnimationMixer(gltf.scene);
+      // const animationAction = mixer.current.clipAction(gltf.animations[0]);
+      // animationAction.play();
 
       const root = gltf.scene;
       group.current.add(root);
