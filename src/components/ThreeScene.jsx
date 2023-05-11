@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 // import Donut from '../assets/models/Donut8.glb';
-import Donut from '../assets/models/Spider66.glb';
+import Donut from '../assets/models/Spider68.glb';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -10,7 +10,9 @@ export default function ThreeScene() {
   const group = useRef();
   const mixer = useRef(null);
   const clock = useRef(new THREE.Clock());
+  const animateOnce = useRef(true);
   const [donut, setDonut] = useState(null);
+  const animationAction = useRef(null);
 
   useEffect(() => {
     const gltfLoader = new GLTFLoader();
@@ -21,13 +23,33 @@ export default function ThreeScene() {
       gltf.scene.position.y = -2;
 
       mixer.current = new THREE.AnimationMixer(gltf.scene);
-      const animationAction = mixer.current.clipAction(gltf.animations[0]);
-      animationAction.play();
+      animationAction.current = mixer.current.clipAction(gltf.animations[0]);
+      // animationAction.current.play();
 
       setDonut(gltf.scene);
       const root = gltf.scene;
       group.current.add(root);
     });
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (window.scrollY > 0 && animateOnce.current) {
+        animateOnce.current = false;
+        animationAction.current.play();
+
+        setTimeout(() => {
+          animationAction.current.paused = true;
+          // mixer.current.stopAllAction();
+        }, 1800);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
