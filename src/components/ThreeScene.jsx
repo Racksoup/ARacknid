@@ -56,7 +56,7 @@ export default function ThreeScene() {
     <div className='ThreeScene'>
       <Canvas style={{ backgroundColor: 'rgba(21,21,21,1)' }}>
         {/* <ambientLight intensity={0.12} /> */}
-        <spotLight position={[10, 20, 10]} angle={0.15} penumbra={1} />
+        <spotLight position={[10, 20, 18]} angle={0.15} penumbra={1} />
         {/* <spotLight position={[-200, -200, -200]} angle={0.15} penumbra={0.1} intensity={0.2} /> */}
         <pointLight position={[-50, -10, -100]} />
         <group ref={group}>

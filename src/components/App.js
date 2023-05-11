@@ -167,8 +167,8 @@ const App = () => {
                   icon={faSpider}
                   label='Animation'
                   title='Website animations that develop character.'
-                  subtitle='Captivating your audience with website animation'
-                  text={`adding animations to your website can captivate your audience and create a more engaging user experience. That's why I offer website animation services that help bring your website to life and make it stand out from the competition.
+                  subtitle='Captivate your audience with website animation'
+                  text={`Adding animations to your website can captivate your audience and create a more engaging user experience. That's why I offer website animation services that help bring your website to life and make it stand out from the competition.
 
                   I use the latest web animation technologies and techniques to create stunning animations that are both functional and visually appealing. From simple hover effects to complex animated graphics, I can help you add animations that enhance your website's user experience and showcase your brand's unique personality.
                   
@@ -186,7 +186,7 @@ const App = () => {
                 <InfoPage
                   image={Connor}
                   title='Connor Rack'
-                  subtitle='Developer, Designer, Business Leader'
+                  subtitle='Developer, Designer'
                   text={`As a web developer, I specialize in designing, developing, and maintaining websites that are both visually appealing and functional. With years of experience in web development, I stay up-to-date with the latest technologies and design trends to create custom websites that meet each client's unique needs.
 
                   I understand that effective communication is crucial to building successful partnerships, so I work closely with my clients throughout the entire development process. From initial design concepts to the final launch of the website, my goal is to ensure that every client is completely satisfied with the end result.
