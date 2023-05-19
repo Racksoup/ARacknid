@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 // import Donut from '../assets/models/Donut8.glb';
-import Donut from '../assets/models/Spider68.glb';
+import Donut from '../assets/models/Spider87.glb';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -19,12 +19,14 @@ export default function ThreeScene() {
     gltfLoader.load(Donut, (gltf) => {
       gltf.scene.scale.set(5, 5, 5);
       gltf.scene.rotateY(3.14);
+      // gltf.scene.rotateZ(16.3);
       gltf.scene.rotateX(-0.45);
       gltf.scene.position.y = -2;
 
+      console.log(gltf.animations);
       mixer.current = new THREE.AnimationMixer(gltf.scene);
-      animationAction.current = mixer.current.clipAction(gltf.animations[0]);
-      // animationAction.current.play();
+      animationAction.current = mixer.current.clipAction(gltf.animations[7]);
+      animationAction.current.play();
 
       setDonut(gltf.scene);
       const root = gltf.scene;
@@ -32,33 +34,33 @@ export default function ThreeScene() {
     });
   }, []);
 
-  useEffect(() => {
-    const handleScroll = (event) => {
-      if (window.scrollY > 0 && animateOnce.current) {
-        animateOnce.current = false;
-        animationAction.current.play();
+  // useEffect(() => {
+  //   const handleScroll = (event) => {
+  //     if (window.scrollY > 0 && animateOnce.current) {
+  //       animateOnce.current = false;
+  //       animationAction.current.play();
 
-        setTimeout(() => {
-          animationAction.current.paused = true;
-          // mixer.current.stopAllAction();
-        }, 1800);
-      }
-    };
+  //       setTimeout(() => {
+  //         animationAction.current.paused = true;
+  //         // mixer.current.stopAllAction();
+  //       }, 1780);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <div className='ThreeScene'>
       <Canvas style={{ backgroundColor: 'rgba(21,21,21,1)' }}>
         {/* <ambientLight intensity={0.12} /> */}
         <spotLight position={[10, 20, 18]} angle={0.15} penumbra={1} />
-        {/* <spotLight position={[-200, -200, -200]} angle={0.15} penumbra={0.1} intensity={0.2} /> */}
-        <pointLight position={[-50, -10, -100]} />
+        <spotLight position={[-10, -20, -18]} angle={0.15} penumbra={0.1} intensity={0.5} />
+        <pointLight position={[-60, 20, -100]} intensity={0.2} />
         <group ref={group}>
           <mesh />
           {donut && <AnimatedDonut donut={donut} mixer={mixer} clock={clock} />}
