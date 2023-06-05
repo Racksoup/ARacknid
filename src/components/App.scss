@@ -86,6 +86,10 @@ p {
 // Fonts
 // Futura
 @font-face {
+  font-family: 'Futura-BoldR';
+  src: url('~/src/assets/fonts/Futura/Futura-Bold-Regular.ttf');
+}
+@font-face {
   font-family: 'Futura-Bold';
   src: url('~/src/assets/fonts/Futura/Futura-Bold-font.ttf');
 }
@@ -120,6 +124,14 @@ p {
 @font-face {
   font-family: 'Futura-CL';
   src: url('~/src/assets/fonts/Futura/Futura-CondensedLight.otf');
+}
+@font-face {
+  font-family: 'Futura-R';
+  src: url('~/src/assets/fonts/Futura/Futura-Regular.ttf');
+}
+@font-face {
+  font-family: 'Futura-BB';
+  src: url('~/src/assets/fonts/Futura/Futura-BB.ttf');
 }
 
 // Helvetica

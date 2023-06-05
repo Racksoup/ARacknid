@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 // import Donut from '../assets/models/Donut8.glb';
-import Donut from '../assets/models/Spider87.glb';
+import Donut from '../assets/models/Spider99.glb';
 
 import { Canvas, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -20,13 +20,13 @@ export default function ThreeScene() {
       gltf.scene.scale.set(5, 5, 5);
       gltf.scene.rotateY(3.14);
       // gltf.scene.rotateZ(16.3);
-      gltf.scene.rotateX(-0.45);
-      gltf.scene.position.y = -2;
+      gltf.scene.rotateX(-0.18);
+      gltf.scene.position.y = -2.5;
 
       console.log(gltf.animations);
       mixer.current = new THREE.AnimationMixer(gltf.scene);
-      animationAction.current = mixer.current.clipAction(gltf.animations[7]);
-      animationAction.current.play();
+      animationAction.current = mixer.current.clipAction(gltf.animations[0]);
+      // animationAction.current.play();
 
       setDonut(gltf.scene);
       const root = gltf.scene;
@@ -34,25 +34,25 @@ export default function ThreeScene() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   const handleScroll = (event) => {
-  //     if (window.scrollY > 0 && animateOnce.current) {
-  //       animateOnce.current = false;
-  //       animationAction.current.play();
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (window.scrollY > 0 && animateOnce.current) {
+        animateOnce.current = false;
+        animationAction.current.play();
 
-  //       setTimeout(() => {
-  //         animationAction.current.paused = true;
-  //         // mixer.current.stopAllAction();
-  //       }, 1780);
-  //     }
-  //   };
+        setTimeout(() => {
+          animationAction.current.paused = true;
+          // mixer.current.stopAllAction();
+        }, 1650);
+      }
+    };
 
-  //   window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className='ThreeScene'>
