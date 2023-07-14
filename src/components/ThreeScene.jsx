@@ -43,7 +43,7 @@ export default function ThreeScene() {
         setTimeout(() => {
           animationAction.current.paused = true;
           // mixer.current.stopAllAction();
-        }, 1650);
+        }, 1620);
       }
     };
 

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Landing.scss';
 import Desk1 from '../../assets/images/Desk1.jpg';
+import ThumbnailPandaNFT from '../../assets/images/ThumbnailPandaNFT.png';
+import ThumbnailWebsiteDesign2 from '../../assets/images/ThumbnailWebsiteDesign2.png';
+import ThumbnailFinancialAdvisor from '../../assets/images/ThumbnailFinancialAdvisor.png';
+import ThumbnailPizzeria from '../../assets/images/ThumbnailPizzeria.png';
 
 import ThreeScene from '../ThreeScene.jsx';
 import Goals from './Goals/Goals.jsx';
@@ -11,10 +15,26 @@ import LandingContact from './LandingContact/LandingContact.jsx';
 
 const Landing = () => {
   const websiteDesign = [
-    { image: Desk1, title: 'First Website' },
-    { image: Desk1, title: 'Second Website' },
-    { image: Desk1, title: 'Third Website' },
-    { image: Desk1, title: 'Fourth Website' },
+    {
+      image: ThumbnailPandaNFT,
+      title: 'Panda NFTs',
+      link: 'https://nft-website.onrender.com/',
+    },
+    {
+      image: ThumbnailFinancialAdvisor,
+      title: 'Financial Advisor',
+      link: 'https://financial-planner.onrender.com/',
+    },
+    {
+      image: ThumbnailPizzeria,
+      title: 'Pizzeria',
+      link: 'https://stefanos-family-pizzeria.onrender.com/',
+    },
+    {
+      image: ThumbnailWebsiteDesign2,
+      title: 'Website Design',
+      link: 'https://website-design.onrender.com/',
+    },
   ];
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

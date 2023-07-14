@@ -65,15 +65,15 @@ const Nav = ({ pos, underline }) => {
                   <Link to='/analytics'>
                     <p>SEO & Analytics</p>
                   </Link>
-                  <Link to='/animation'>
+                  {/* <Link to='/animation'>
                     <p>Animation</p>
-                  </Link>
-                  <Link to='/logo-design'>
+                  </Link> */}
+                  {/* <Link to='/logo-design'>
                     <p>Logo Design</p>
                   </Link>
                   <Link to='/business-cards'>
                     <p>Busines Card Design</p>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Nav = ({ pos, underline }) => {
         </div>
         <div className='Right'>
           <div className='ContactInfo'>
-            <p>Connor@ARacknid.ca</p>
+            <p>Tranquilgorge@outlook.com</p>
             <p>(613)-869-2343</p>
           </div>
           <Link to='/planning'>
