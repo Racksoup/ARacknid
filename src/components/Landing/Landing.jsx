@@ -58,7 +58,7 @@ const Landing = () => {
       <Goals />
       <div className='ExamplesSpacer' />
       <Examples landing={true} info={websiteDesign} />
-      <LandingTestimonials />
+      {/* <LandingTestimonials /> */}
       <div className='ContactSpacer' />
       <LandingContact />
     </div>
