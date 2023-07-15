@@ -203,15 +203,15 @@ const App = () => {
                   image={Community}
                   title='community'
                   subtitle='Building Up'
-                  text='At our company, we are dedicated to creating innovative and engaging online experiences for our clients. We believe that the power of the internet can transform businesses, and we are committed to helping our clients achieve their goals through cutting-edge web development services.
+                  text='At Aracknid, I am dedicated to creating innovative and engaging online experiences for my clients. I believe that the power of the internet can transform businesses, and I am committed to helping our clients achieve their goals through cutting-edge web development services.
 
-                  Our community is made up of the many businesses that we have helped over the years. We take pride in the success of our clients and the impact that our work has had on their businesses. Through our partnership with these businesses, we have built a strong network of satisfied customers who are passionate about our services.
+                  The Aracknid community is made up of the many businesses that I have helped over the years. I take pride in the success of my clients and the impact that Aracknid has had on their businesses. Through my partnership with these businesses, I have built a strong network of satisfied customers who are passionate about Aracknid Design services.
                   
-                  We understand that the world of web development can be complex and intimidating, which is why we are committed to providing our clients with the highest level of support and guidance throughout their journey. Our team of experienced developers and designers are here to help every step of the way, ensuring that our clients achieve the results they are looking for.
+                  I understand that the world of web development can be complex and intimidating, which is why I am committed to providing my clients with the highest level of support and guidance throughout their journey.
                   
-                  At our core, we are dedicated to helping businesses succeed. We believe that by creating exceptional online experiences, we can help businesses reach their full potential and thrive in the digital age. We invite you to join our community of successful businesses and experience the transformative power of our web development services.
+                  The core goal of Aracknid is to help businesses succeed. I believe that by creating exceptional online experiences, I can help businesses reach their full potential and thrive in the digital age. I invite you to join our community of successful businesses and experience the transformative power of Aracknid Design services.
                   
-                  Thank you for your interest in our community page. We look forward to helping your business succeed!'
+                  I look forward to helping your business succeed!'
                   contact={false}
                 />
               }

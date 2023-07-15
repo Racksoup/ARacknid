@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Landing.scss';
-import Desk1 from '../../assets/images/Desk1.jpg';
 import ThumbnailPandaNFT from '../../assets/images/ThumbnailPandaNFT.png';
 import ThumbnailWebsiteDesign2 from '../../assets/images/ThumbnailWebsiteDesign2.png';
 import ThumbnailFinancialAdvisor from '../../assets/images/ThumbnailFinancialAdvisor.png';
