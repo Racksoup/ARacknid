@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './Navbar.scss';
+import React, { useState, useEffect } from "react";
+import "./Navbar.scss";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, toggleShowNav] = useState(false);
@@ -18,20 +18,20 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div className='NavBox'>
-      {showNav && <div className='NavPlaceholder'></div>}
+    <div className="NavBox">
+      {showNav && <div className="NavPlaceholder"></div>}
       {showNav ? (
-        <Nav pos='fixed' underline='rgba(255,255,255,.5) solid 1px' />
+        <Nav pos="fixed" underline="rgba(255,255,255,.5) solid 1px" />
       ) : (
-        <Nav pos='relative' underline='none' />
+        <Nav pos="relative" underline="none" />
       )}
     </div>
   );
@@ -39,30 +39,30 @@ const Navbar = () => {
 
 const Nav = ({ pos, underline }) => {
   return (
-    <div className='Navbar' style={{ position: `${pos}`, top: `0` }}>
-      <div className='Content' style={{ borderBottom: `${underline}` }}>
-        <div className='Left'>
-          <Link to='/'>
+    <div className="Navbar" style={{ position: `${pos}`, top: `0` }}>
+      <div className="Content" style={{ borderBottom: `${underline}` }}>
+        <div className="Left">
+          <Link to="/">
             <h2>ARacknid Design</h2>
           </Link>
-          <div className='NavItems'>
-            <div className='Drop'>
-              <div className='DropOuter'>
-                <div className='DropTitle'>
+          <div className="NavItems">
+            <div className="Drop">
+              <div className="DropOuter">
+                <div className="DropTitle">
                   <p>How I Help</p>
-                  <FontAwesomeIcon icon={faChevronDown} className='Icon' />
+                  <FontAwesomeIcon icon={faChevronDown} className="Icon" />
                 </div>
-                <div className='DropInner'>
-                  <Link to='/website-design'>
+                <div className="DropInner">
+                  <Link to="/website-design">
                     <p>Website Design</p>
                   </Link>
-                  <Link to='/website-implementation'>
+                  <Link to="/website-implementation">
                     <p>Website Implementation</p>
                   </Link>
-                  <Link to='/website-hosting'>
+                  <Link to="/website-hosting">
                     <p>Website Hosting</p>
                   </Link>
-                  <Link to='/analytics'>
+                  <Link to="/analytics">
                     <p>SEO & Analytics</p>
                   </Link>
                   {/* <Link to='/animation'>
@@ -77,20 +77,20 @@ const Nav = ({ pos, underline }) => {
                 </div>
               </div>
             </div>
-            <div className='Drop'>
-              <div className='DropOuter'>
-                <div className='DropTitle'>
+            <div className="Drop">
+              <div className="DropOuter">
+                <div className="DropTitle">
                   <p>Why ARacknid</p>
-                  <FontAwesomeIcon icon={faChevronDown} className='Icon' />
+                  <FontAwesomeIcon icon={faChevronDown} className="Icon" />
                 </div>
-                <div className='DropInner'>
-                  <Link to='/about'>
+                <div className="DropInner">
+                  <Link to="/about">
                     <p>About</p>
                   </Link>
-                  <Link to='/community'>
+                  <Link to="/community">
                     <p>Community</p>
                   </Link>
-                  <Link to='/planning'>
+                  <Link to="/planning">
                     <p>Planning</p>
                   </Link>
                 </div>
@@ -99,12 +99,12 @@ const Nav = ({ pos, underline }) => {
             {/* <p>Testimonials</p> */}
           </div>
         </div>
-        <div className='Right'>
-          <div className='ContactInfo'>
-            <p>Tranquilgorge@outlook.com</p>
+        <div className="Right">
+          <div className="ContactInfo">
+            <p>Connor@Aracknid.ca</p>
             <p>(613)-869-2343</p>
           </div>
-          <Link to='/planning'>
+          <Link to="/planning">
             <button>
               <p>Get Started</p>
             </button>
