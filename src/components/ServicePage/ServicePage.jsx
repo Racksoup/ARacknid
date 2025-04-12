@@ -6,30 +6,21 @@ import ThumbnailPandaNFT from '../../assets/images/ThumbnailPandaNFT.png';
 import ThumbnailWebsiteDesign2 from '../../assets/images/ThumbnailWebsiteDesign2.png';
 import ThumbnailFinancialAdvisor from '../../assets/images/ThumbnailFinancialAdvisor.png';
 import ThumbnailPizzeria from '../../assets/images/ThumbnailPizzeria.png';
+import SportStore from '../../assets/images/EcommerceSportsStore.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ServicePage = ({ layout, icon, label, title, subtitle, text, image, examples }) => {
   const websiteDesign = [
     {
-      image: ThumbnailPandaNFT,
-      title: 'Panda NFTs',
-      link: 'https://nft-website.onrender.com/',
-    },
-    {
-      image: ThumbnailFinancialAdvisor,
-      title: 'Financial Advisor',
-      link: 'https://financial-planner.onrender.com/',
-    },
-    {
       image: ThumbnailPizzeria,
       title: 'Pizzeria',
       link: 'https://stefanos-family-pizzeria.onrender.com/',
     },
     {
-      image: ThumbnailWebsiteDesign2,
-      title: 'Website Design',
-      link: 'https://website-design.onrender.com/',
+      image: SportStore,
+      title: 'Ecommerce Sports Store',
+      link: 'https://fitness-store.onrender.com/',
     },
   ];
   const animations = [
