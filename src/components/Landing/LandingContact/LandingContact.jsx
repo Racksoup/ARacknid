@@ -25,6 +25,7 @@ const LandingContact = () => {
   };
 
   const submitForm = () => {
+    console.log(process.env.EMAILJS_SERVICE, process.env.EMAILJS_TEMPLATE, process.env.EMAILJS_USER);
     if (form.name !== '' && form.message !== '' && form.email !== '' && canSend) {
       toggleCanSend(false);
       setModalText(textOptions.sending);
